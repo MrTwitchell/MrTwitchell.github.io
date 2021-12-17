@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+ 
+<link rel="icon" href="CRM Logo.png" type="image/gif" sizes="16x16">
+
+ 
+<title>CRM Info Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="CRM Logo (2).png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>EXAMPLES</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>COMPONENTS</p>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+
+/*Current date script credit:
+JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='ffffff' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+</script>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">ELEMENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"><b>
+
+<script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+// ********** MAKE YOUR CHANGES HERE
+
+var text="Customer Relationship Management" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+</h1>
+   
+    <p>(Site by Alejandro Aguilar)</p>
+    <img src="CRM Cover.png" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">What Is CRM?</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Customer Relationship Management (CRM) is a technology that manages the interactions between a company and its customers/potential customers. It does so with the goal of improving business relationships to grow out said business. This belongs to a category of integrated, data-driven software solutions that help improve how you interact and do business with your all of your customers. It is especially used in the business-to-business area where it's relatively hard for many companies to attract more customers. Even with the introduction of online marketing to help find easier and newer ways to acquire companies, business-to-business still remains a sector where it is difficult. CRM is also used in the business-to-consumer area but used instead based on processes and solutions that are specifically tailored to individual customers. Companies use customer relationship management because if their sales and marketing measures are coordinated through a CRM system, the company can identify relevant target groups.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Types Of CRM</h3>
+    <p class="w3-wide">CRM Software</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:140px;width:100%">Special CRM software collects customer information into one place to give businesses easy access to data, like contact data, purchase history and any previous contact with customer service representatives. This data helps employees interact with clients, anticipate customer needs, recognize customer updates and track performance goals when it comes to sales. CRM software's main purpose is to make interactions more efficient and productive. Automated procedures within a CRM module include sending sales team marketing materials based on a customer's selection of a product or service. Programs also assess a customer's needs to reduce the time it takes to fulfill a request.</div>
+    </div><br>
+    <p class="w3-wide">CRM Cloud Software</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:140px;width:100%">Cloud-based systems provide real-time data to sales agents at the office and in the field as long as a computer, smartphone, laptop or tablet connects to the internet. Such systems boast heightened accessibility to customer information and eliminate the sometimes-complicated installation process involved with other CRM products or software. The convenience of this type of system, however, has a trade-off. If a company goes out of business or faces an acquisition, access to customer information may become compromised. A business might have compatibility issues when and if it migrates to a different vendor for this kind of software. Also, cloud-based CRM programs typically cost more than in-house programs.</div>
+    </div><br>
+    <p class="w3-wide">CRM Human Management and Artificial Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:165px;width:100%">CRM has numerous AI applications. However, while most businesses have significantly improved their ability to collect customer data, few can perform analysis, mining, and the understanding required to utilize this data fully. AI can help predict consumer behavior, act as a sales assistant, generate predictive lead scores, assist in creating targeted content, and even automate service desk functions, to name a few examples. Artificial Intelligence (AI) can help businesses automate regular processes, provide quick replies to customers, and provide correct insights to sustain business growth. AI not only eliminates manual tasks, but it also improves the efficiency of sales professionals by offering precise guidance on how to sell more, faster. Many people refer to this as AI-powered marketing, in which artificial intelligence is used to better analyze and forecast customer behavior.</div>
+    </div><br>
+    </div>
+  <!-- End About Section -->
+  </div>
+ 
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Examples</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Apple Logo.png" style="width:100%"><p>CRM plays a pivotal role in Apple’s growth strategy. Whenever an Apple device is used, an Apple ID is needed to register the device. An Apple ID is an account you use to access Apple services like the App Store, Apple Music, iCloud, iMessage, FaceTime, and more. These unique IDs synchronize across devices, save music and film preferences, and provide bespoke recommendations based on what you like. For Apple, it’s a tool that provides insights on what customers like and it can be used for effortless, targeted marketing.</p>
+        <br>
+        <img src="Coca Cola Logo.jpeg" style="width:100%"><p>Coca-Cola uses CRM to promote collaboration and deal with customer issues quickly and efficiently. By using CRM software, every member of a Coca-Cola team can identify issues, monitor customer behaviour and social media to promote offers and promotions. Moreover, team members can use mobile apps on the go to access customer history anytime and anywhere, create and update work orders, and send out field technicians in real-time.</p>
+        <br>
+      </div>
+
+      <div class="w3-half">
+        <img src="Amazon Logo 2.png" style="width:100%"><p>Amazon has one of the most complete CRM infrastructures in the world that harnesses customer data during purchases to instantly customize users’ online experience. When purchasing an item from Amazon, you will need to set up a personal account. Then, Amazon can track your purchases and browsing history to tailor marketing campaigns and email campaigns based on things you will probably like. Moreover, you can configure your account to set up purchases in one-click. This is one of Amazon’s most popular feature and customers appreciate it as it dramatically speeds up the checkout process when making a purchase.</p>
+        <br>
+        <img src="Activision Logo.png" style="width:100%"><p>Activision is a pioneer in the video gaming industry that uses CRM to connect with gamers via social media websites such as Facebook and Twitter. By using a cloud-based CRM solution, the company was able to reduce customer service related expenses by 25%, assess and resolve 82 % of customer-related issues through online self-service, improve communications with its gaming community, reduce overhead costs, and increase their user satisfaction rates.</p>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Components</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p>The main components of CRM are building and managing customer relationships through marketing, observing relationships as they mature through distinct phases, managing these relationships at each stage and recognizing that the distribution of the value of a relationship to the firm is not homogeneous. When building and managing customer relationships through marketing, firms might benefit from using a variety of tools to help organizational design, incentive schemes, customer structures, and more to optimize the reach of their marketing campaigns. Through the acknowledgment of the distinct phases of CRM, businesses will be able to benefit from seeing the interaction of multiple relationships as connected transactions. The final factor of CRM highlights the importance of CRM through accounting for the profitability of customer relationships. Through studying the particular spending habits of customers, a firm may be able to dedicate different resources and amounts of attention to different types of consumers.</p>
+    </div><br>
+    <h3 class="w3-padding-16 w3-text-light-grey">Elements</h3>
+    <p>CRM can be divided into the following four elements:</p>
+    <p class="w3-wide">Analytical CRM</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:140px;width:100%">The analytical component of CRM is where customer data is collected and evaluated. CRM software and the options it makes possible play a central role in this function. What data can your software collect? In what ways can this data then be analyzed and evaluated? These questions must be taken into consideration when selecting CRM software because effective customer relationship management cannot be achieved without reliable data evaluation. Methods borrowed from the field of business intelligence are used for this purpose, especially data mining. This helps to identify trends and can verify whether certain measures have been successful while also reporting on whether there were any side effects.</div>
+    </div>
+    <p class="w3-wide">Operational CRM</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:120px;width:100%">The task of operational CRM is to translate the findings of analytical CRM into concrete measures. Among other things, this includes sorting customers into different categories. This helps to evaluate the relative importance of each customer to the company, the market sector in which the customer is active, whether the customer could be interested in any other aspects of the market, whether the order potential in the identified core sector has yet been exhausted, and more. In addition, operational CRM also gathers further data which, in conjunction with the software, helps to give a more precise picture of each customer.</div>
+    </div>
+    <p class="w3-wide">Communicational CRM</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:120px;width:100%">Communicational CRM manages various communication channels so that a coordinated contact with the customer can be maintained. If, for example, a customer has been contacted via newsletter, this can then be followed up with a personal call. This coordination of communication methods means the company can build upon the groundwork performed by each successive measure. In the absence of such coordination, some of these measures would presumably be in vain, or perhaps even counterproductive if the customer then feels harassed or poorly looked-after.</div>
+      </div>
+    <p class="w3-wide">Collaborative CRM</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:100px;width:100%">Just like communicational CRM, collaborative CRM serves to coordinate. However, this task is not about coordinating external actions but concerns coordination across the company. Thanks to CRM software, all departments involved in customer relationship management work with the same data, but this does not necessarily mean their efforts are coordinated. Collaborative CRM allows a company-wide approach, which determines clear goals and responsibilities.</div>
+    </div><br>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+</body>
+</html>
